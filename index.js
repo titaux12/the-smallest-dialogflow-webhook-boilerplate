@@ -18,7 +18,7 @@ app.post('/', (req, res) => {
   let response = {};
   const intentName = req.body.queryResult.intent.displayName;
 
-  if (intentName === 'emploi du temps') {
+  if (intentName === 'emploi_du_temps') {
     response = {
 	    fulfillmentText: "Tu n'a rien demain, branleur :)",
     }
